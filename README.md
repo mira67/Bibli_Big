@@ -1,6 +1,3 @@
-# MicRoCon
-
-Tinkering with a MicRoCon v1.1 from 4Tronix and a Pan & Tilt from AdaFruit.  For the most part I've consumed work by others to create the system I envisioned.  Sources cited below.
 
 app.py
 ------
@@ -34,3 +31,6 @@ RPIO - sudo pip install rpio
 [3] http://arusahni.net/blog/2013/10/flask-multithreading.html
 
 [4] http://makezine.com/projects/raspberry-eye-remote-servo-cam/
+=======
+# Bibli_V2
+
