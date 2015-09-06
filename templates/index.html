@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <title>ToffeeBot</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script language="javascript" type="text/javascript">
+		function Button_onclick(direction) {
+			$.ajax({ url: '/' + direction });
+		}
+	</script>  
+  </head>
+	<body>
+		<h1>ToffeeBot</h1>
+		<img src="{{ url_for('video_feed') }}">
+		<table>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					Control
+				</td>
+				<td colspan="2" style="text-align: center">
+					Nonuse
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					<input id="btnUp" type="button" value="Forward" onclick="Button_onclick('f')" />
+				</td>
+				<td colspan="2" style="text-align: center">
+					<input id="btnFwd" type="button" value="NA" onclick="Button_onclick('forward')" />
+				</td>
+			</tr>
+			<tr>
+				<td style="text-align: center">
+					<input id="btnLeft" type="button" value="Left" onclick="Button_onclick('l')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnCtr" type="button" value="Stop" onclick="Button_onclick('s')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnRight" type="button" value="Right" onclick="Button_onclick('r')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnMLeft" type="button" value="NA" onclick="Button_onclick('left')" />
+				</td>
+				<td style="text-align: center">
+					<input id="btnMRight" type="button" value="NA" onclick="Button_onclick('right')" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3" style="text-align: center">
+					<input id="btnDown" type="button" value="Reverse" onclick="Button_onclick('b')" />
+				</td>
+				<td colspan="2" style="text-align: center">
+					<input id="btnRev" type="button" value="NA" onclick="Button_onclick('reverse')" />
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
